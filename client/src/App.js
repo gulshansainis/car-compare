@@ -55,7 +55,7 @@ function App() {
     return (
         <>
             <h1 className="text-3xl pt-10 text-center lg:container lg:mx-auto">
-                Total Cars ({`${data.length})`}
+                Total Cars ({data.length === undefined ? '0' : data.length})
             </h1>
             {data.length >= 3 ? (
                 <h3 className="text-1xl text-center lg:container lg:mx-auto">
@@ -138,9 +138,12 @@ function App() {
                 {data.length >= 3 && (
                     <>
                         <div className="flex justify-between">
-                            {data.slice(0, 3).map((row) => {
+                            {data.slice(0, 3).map((row, idx) => {
                                 return (
-                                    <span className="text-gray-700 text-sm font-bold m-2 p-2 border-solid border-2 border-teal-300 rounded">
+                                    <span
+                                        key={idx}
+                                        className="text-gray-700 text-sm font-bold m-2 p-2 border-solid border-2 border-teal-300 rounded"
+                                    >
                                         <ModelSelector {...row} />
                                     </span>
                                 )
