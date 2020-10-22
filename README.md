@@ -7,6 +7,8 @@ A full stack application to compare several types of cars. Comparison table disp
 
 ## Development environment
 
+`git clone https://github.com/gulshansainis/car-compare`
+
 ### React Client
 
 1. `cd client`
