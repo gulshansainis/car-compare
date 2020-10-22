@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "jest --silent --testEnvironment=node --maxWorkers=1 --collect-coverage",
+    "test:watch": "jest  --silent --watch --testEnvironment=node --maxWorkers=1"
   },
   "author": "",
   "license": "ISC",
@@ -12,5 +14,9 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "jest": "^26.6.0",
+    "supertest": "^5.0.0"
   }
 }

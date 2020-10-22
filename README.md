@@ -2,6 +2,9 @@
 
 A full stack application to compare several types of cars. Comparison table displays top 3 cars by feature
 
+## Demo
+![Compare Car](car-compare-demo.gif)
+
 ## Development environment
 
 ### React Client
@@ -12,6 +15,8 @@ A full stack application to compare several types of cars. Comparison table disp
 
 Client runs on port `http://localhost:3000`
 
+To run test `npm run test`
+
 ### Express Server
 
 1. `cd client`
@@ -19,6 +24,8 @@ Client runs on port `http://localhost:3000`
 3. `npm start`
 
 Server runs on port `http://localhost:4000`
+
+To run test `npm run test`
 
 ## Production
 
